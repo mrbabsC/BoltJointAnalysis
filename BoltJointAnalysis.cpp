@@ -1,21 +1,11 @@
-// BoltJointAnalysis.cpp : This file contains the 'main' function. Program execution begins and ends there.
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
 #include <stdio.h>
 #include <math.h>
 #include "BoltJointAnalysis.h"
 
 int main()
 {
-	int boltsize;	//Boltsize in metric Mxx
-	float At;		//Bolt cross section	[mm2]
+	int boltsize;		//Boltsize in metric Mxx
+	float At;		//Bolt cross section		[mm2]
 	int Fi;			//Bolt preload			[N]
 	int Sp;			//Proof strength		[MPa]
 	int Sy;			//Yield strength		[MPa]
@@ -24,7 +14,7 @@ int main()
 	int Kb;			//Bolt stiffness
 	int Km;			//Member stiffness
 	
-	float preload;	//75% of proof load
+	float preload;		//75% of proof load
 	int Pb;
 	int force;
 	int evaluation_stress;
